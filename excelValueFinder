@@ -23,7 +23,7 @@
                     </div>
                     <div>
                         <h1 class="text-base sm:text-lg font-bold text-slate-900 leading-tight">Excel &amp; WPS Value Finder Pro</h1>
-                        <p class="text-xs text-slate-500">Created by <span class="text-slate-900 font-bold">Pawan Lohiya</span></p>
+                        <p class="text-xs text-slate-500"><span class="text-slate-900 font-bold"></span></p>
                     </div>
                 </div>
             </div>
@@ -200,6 +200,8 @@
             }
 
             document.getElementById('fileStatus').textContent = `Successfully loaded: ${loadedNames.join(', ')}`;
+            // Reset input so re-selecting the same file works correctly
+            event.target.value = '';
         }
 
         function savePastedData() {
@@ -333,4 +335,4 @@
         }
     </script>
 </body>
-</html>
+<
